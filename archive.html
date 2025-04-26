@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S K I D . W I K I</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #0e0e0e;
+      color: #cfcfcf;
+      font-family: 'Courier New', Courier, monospace;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #000;
+      padding: 14px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #1c1c1c;
+    }
+
+    header .logo {
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    nav a {
+      color: #ccc;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .ascii-art {
+      text-align: center;
+      font-size: 0.7rem;
+      color: #f87171;
+      margin-bottom: 30px;
+    }
+
+    .paste-box {
+      background-color: #1a1a1a;
+      padding: 16px;
+      border-radius: 6px;
+      margin-bottom: 24px;
+      border: 1px solid #2a2a2a;
+    }
+
+    .paste-title {
+      font-size: 1rem;
+      color: #ddd;
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+
+    .paste-summary {
+      font-size: 1rem;
+      color: #ddd;
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+
+    .paste-summary span {
+      font-size: 0.85rem;
+      color: #999;
+    }
+
+    .paste-content {
+      color: #cfcfcf;
+      font-size: 0.9rem;
+      white-space: pre-wrap;
+    }
+
+    .back-button {
+      text-decoration: none;
+      background-color: #2a2a2a;
+      color: #ccc;
+      padding: 8px 16px;
+      border-radius: 4px;
+      display: inline-block;
+      margin-top: 20px;
+      font-size: 0.85rem;
+    }
+
+    .back-button:hover {
+      background-color: #3a3a3a;
+      color: #fff;
+    }
+
+    details {
+      margin-bottom: 16px;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+      color: #aaa;
+    }
+
+    summary:hover {
+      color: #fff;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .form-box {
+      background-color: #1a1a1a;
+      padding: 16px;
+      border-radius: 6px;
+      margin-bottom: 24px;
+      border: 1px solid #2a2a2a;
+    }
+
+    .form-label {
+      color: #ddd;
+      font-size: 1rem;
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    .form-input, .form-textarea {
+      background-color: #2a2a2a;
+      color: #cfcfcf;
+      padding: 10px;
+      border: 1px solid #444;
+      border-radius: 4px;
+      width: 100%;
+      margin-bottom: 16px;
+    }
+
+    .form-textarea {
+      height: 150px;
+      resize: vertical;
+    }
+
+    .form-submit {
+      background-color: #3a3a3a;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .form-submit:hover {
+      background-color: #2a2a2a;
+    }
+  </style>
+</head>
+
+<body class="min-h-screen">
+
+<header class="bg-black px-6 py-3 border-b border-[#1c1c1c] flex justify-between items-center">
+  <div class="logo text-white font-bold text-xl">S K I D . W I K I</div>
+  <nav class="space-x-6">
+    <a href="https://t.me/skiddotwiki" target="_blank" class="text-[#ccc] text-sm hover:text-white">Telegram</a>
+    <a href="https://skid.wiki" target="_blank" class="text-[#ccc] text-sm hover:text-white">Main Page</a>
+  </nav>
+</header>
+
+  <div class="container p-6">
+    <div class="text-center mb-8">
+      <pre class="ascii-art">
+
+                #                                              #              
+                ###                                          ##               
+                 #####                                    ####                
+                  ######                               #######                
+                  #########                          ########                 
+                   ##########                     ###########                 
+                   ##### ##### @@@@@@@@@@@@@@@ #############                  
+                    ####   @@@@@@@@@@@@@@@@@ #######   ####                   
+                    ##### @@@@@@@@  #     ######## @@@ ####                   
+                     #### @@@   ####### #######  @@@@@@@##                    
+                      ####         ####### #       @@@@@@                     
+                    @ #####       ## #######         @@@@@@                   
+                   @@@ ####     ####### #######     ## @@@@@                  
+                  @@@@@##### #######      #######  #### @@@@                  
+                 @@@@@  # ########           ########## @@@@@                 
+                 @@@@   #######                ## ####   @@@@                 
+                 @@@@ ######                     ######## @@@@                
+                @@@@@##### ###                  ##### ##### @@                
+                @@@@@##   #####                 ####  ########                
+             ### @@@@      ####                #####     #######              
+          ###### @@@@      #####              #####      @ ########           
+        #######  @@@@@      ####              ####      @@@@@ #######         
+     ############################ #######               @@@@    ########      
+  ########################## ######################### @@@@@##############    
+  ########################### #### ################# @@@@@ ################## 
+                     @@@@@@   #####        #####   @@@@@@                     
+                       @@@@@@@ ####        ####  @@@@@@@                      
+                         @@@@@@@@@        #####@@@@@@                         
+                           @@@@@@@@@@@@@@##### @@@@                           
+                               @@@@@@@@@ #### @                               
+                                 ####   #####                                 
+                                  #### #####                                  
+                                  #########                                   
+                                   ########                                   
+                                   #######                                    
+                                    #####                                     
+                                     ####                                     
+                                     ###                                      
+                                      ##                                      
+                                      #                                       
+                                                                         
+      </pre>
+      <a href="#pastes" class="text-white hover:text-red-400">Welcome to Skid Wiki</a>
+    </div>
+
+    <div class="form-box">
+      <h2 class="text-2xl mb-4 text-red-400">Create a Paste</h2>
+      <form id="pasteForm">
+        <label class="form-label" for="pasteTitle">Title</label>
+        <input type="text" id="pasteTitle" class="form-input" placeholder="Enter paste title" required>
+
+        <label class="form-label" for="pasteDescription">Description</label>
+        <input type="text" id="pasteDescription" class="form-input" placeholder="Enter paste description" required>
+
+        <label class="form-label" for="pasteContent">Content</label>
+        <textarea id="pasteContent" class="form-textarea" placeholder="Enter paste content" required></textarea>
+
+        <button type="submit" class="form-submit">Create Paste</button>
+      </form>
+    </div>
+
+    <div id="pastes" class="mb-8">
+      <h2 class="text-2xl mb-4 text-red-400">Pastes</h2>
+      <ul id="pasteList" class="space-y-4">
+      </ul>
+    </div>
+
+<div class="text-center mt-12">
+  <button id="downloadArchive" class="inline-block bg-gray-600 hover:bg-gray-500 text-white font-mono text-sm px-6 py-2 rounded shadow transition duration-200">
+    Submit Archive
+  </button>
+</div>
+
+<div id="notification" class="hidden fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-[#1a1a1a] border border-red-600 text-white px-6 py-3 rounded shadow-lg text-sm font-mono z-50">
+  ✅ Provide the downloaded .html file to <strong>t.me/horrorized</strong> to publish your archive.
+</div>
+
+    <div class="text-center mt-8">
+      <p class="text-sm text-gray-500">skid.wiki</p>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('downloadArchive').addEventListener('click', function () {
+    const savedPastes = JSON.parse(localStorage.getItem('pastes')) || [];
+
+    let htmlContent = `
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Skid Wiki Archive</title>
+  <style>
+    body { background: #0e0e0e; color: #cfcfcf; font-family: monospace; padding: 2rem; }
+    .paste { background: #1a1a1a; border: 1px solid #333; margin-bottom: 1.5rem; padding: 1rem; border-radius: 6px; }
+    .title { font-weight: bold; font-size: 1.1rem; color: #f87171; }
+    .desc { font-size: 0.9rem; color: #999; margin-bottom: 0.5rem; }
+    .content { white-space: pre-wrap; color: #ddd; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <h1 style="color: #f87171;">Skid Wiki Paste Archive</h1>
+`;
+
+    savedPastes.forEach(paste => {
+      htmlContent += `
+  <div class="paste">
+    <div class="title">${paste.title}</div>
+    <div class="desc">${paste.description}</div>
+    <div class="content">${paste.content}</div>
+  </div>
+      `;
+    });
+
+    htmlContent += `
+</body>
+</html>`;
+
+    const blob = new Blob([htmlContent], { type: 'text/html' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'skidwiki_archive.html';
+    a.click();
+    URL.revokeObjectURL(url);
+    const notif = document.getElementById('notification');
+    notif.classList.remove('hidden');
+    setTimeout(() => notif.classList.add('hidden'), 6000);
+  });
+  
+    const form = document.getElementById('pasteForm');
+    const pasteList = document.getElementById('pasteList');
+    document.addEventListener('DOMContentLoaded', function () {
+      const savedPastes = JSON.parse(localStorage.getItem('pastes')) || [];
+      savedPastes.forEach(function (paste) {
+        displayPaste(paste);
+      });
+    });
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const title = document.getElementById('pasteTitle').value;
+      const description = document.getElementById('pasteDescription').value;
+      const content = document.getElementById('pasteContent').value;
+
+      const newPaste = { title, description, content };
+      const savedPastes = JSON.parse(localStorage.getItem('pastes')) || [];
+      savedPastes.push(newPaste);
+      localStorage.setItem('pastes', JSON.stringify(savedPastes));
+
+      displayPaste(newPaste);
+
+      form.reset();
+    });
+
+    function displayPaste(paste) {
+      const newPaste = document.createElement('li');
+      newPaste.classList.add('paste-box');
+
+      const pasteDetails = document.createElement('details');
+      const pasteSummary = document.createElement('summary');
+      pasteSummary.classList.add('paste-summary');
+      pasteSummary.innerHTML = `${paste.title} - <span class="text-xs text-gray-500">${paste.description}</span>`;
+
+      const pasteContent = document.createElement('pre');
+      pasteContent.classList.add('paste-content');
+      pasteContent.textContent = paste.content;
+
+      pasteDetails.appendChild(pasteSummary);
+      pasteDetails.appendChild(pasteContent);
+      newPaste.appendChild(pasteDetails);
+
+      pasteList.appendChild(newPaste);
+    }
+  </script>
+
+</body>
+
+</html>
